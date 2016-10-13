@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Acres Verts</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="javaScript/bootstrap.min.js"></script>
+    <script src="javaScript/jquery.js"></script>
+    <script>
+
+        var headerHeight = $('navbar').height();
+
+        /*Animation for scrolling header*/
+        $(window).scroll(function() {
+            /*   alert("scroll");*/
+            if ($(this).scrollTop() > headerHeight*0.1) {
+                $('.navbar.navbar-inverse.navbar-static-top').addClass('scrollHeader');
+                $('#navBlock').removeClass("divBlock");
+                $('#logoTitle').hide();
+                $('#logoTitleScroll').show();
+                $('.navbar-navS').css('margin-top','10px');
+                $('.langue a').css('color','#222D1C');
+
+                /*
+                 $('.navbar h2').css('font-size' , '1.3em');
+                 $('.navbar h2').css('line-height' , '10%');
+                 */
+            } else {
+
+                $('.navbar').removeClass('scrollHeader');
+                $('#navBlock').addClass("divBlock");
+                $('#logoTitleScroll').hide();
+                $('#logoTitle').show();
+            }
+        });
+    </script>
+</head>
+<body>
+<div id="mainContainer">
+
+<div class="media langue">
+    <a class="pull-left" href="#">
+        <p>FR</p>
+    </a>
+</div>
+    <!-- Navigation -->
+    <div class="divBlock" id="navBlock">
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="logoTitle" >
+                <div class="col-md-6" >
+                    <a href="index.html">
+                        <img src="images/logoAV2.png" alt="Camping logo" width="150" height="90">
+                        <div id="headerTitle">
+                            <h2>Camping &nbsp;</h2>
+                            <h2>Les Acres Verts</h2>
+                        </div>
+                    </a>
+                </div>
+                <div id="information" class="col-md-6 hidden-xs"> <!--visible-lg visible-md -->
+                    <p>Viera Krolikowska, Prop.</p>
+                    <p>579-700-5111<img src="./images/icons/phone.png" alt="Call camping"></p>
+                    <p  class="visible-md visible-lg">525, ave de Venice O.</p>
+                    <p class="visible-md visible-lg">Venice-en-Québec, QC, J0J 2K0</p>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="col-md-4" id="logoTitleScroll">
+                    <a href="index.html">
+                        <img src="images/logoAV2.png" alt="Camping logo" width="90" height="40">
+                        <div id="headerTitleScroll">
+                            <h2>Camping &nbsp;</h2>
+                            <h2>Les Acres Verts</h2>
+                        </div>
+                    </a>
+                </div>
+                <ul class="nav navbar-navS " >
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="hebergement.html">Héberdegement</a></li>
+                    <li class="active"><a href="activites.html">Activites</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<div id="services" class="divBlock">
+<h2>Nos services:</h2>
+    <ul>
+        <li>Descente pour Bateaux</li>
+        <li>QuaiPiscine Creusée (30' x 60')</li>
+        <li>Roulottes à louer (Complètement équipées)</li>
+        <li>2 Blocs Sanitaires avec douches (sans frais)</li>
+        <li>Buanderie</li>
+        <li>Station Vidange</li>
+        <li>Recyclage</li>
+        <li>Salle Communautaire</li>
+        <li>Danse</li>
+        <li>Party</li>
+        <li>Bingo</li>
+        <li>Terrain de Jeux</li>
+        <li>etc...</li>
+    </ul>
+</div>
+<div style="height: 500px"></div>
+</div>
+
+<footer>
+    <div class="col-md-3"><small>Les Acres Verts 2016 - Tous droits Réservé</small></div>
+    <div class="col-md-6"></div>
+    <div class="col-md-3"><small>Crée par Silviya Draganova</small></div>
+</footer>
+</body>
+</html>

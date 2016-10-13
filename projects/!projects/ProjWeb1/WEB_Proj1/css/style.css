@@ -1,0 +1,418 @@
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT);
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    color:#59435f;
+    text-shadow: 0 0 2px white ;
+}
+
+body {
+    background-image:  url("../images/vertical_line.jpg"), url("../images/background.jpg") ;
+    background-size: 15em 100%, 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 1.5em 2% ,0em ;
+    
+}
+
+input[type="submit"]:hover {
+ /*   font-size: 1.63em; */
+    color: #db514d;
+    font-weight: bold;
+    text-shadow: 0 0 2px #59435f ;
+}
+
+ .titre {
+    font-size: 1.9em;
+    color:#59435f ;
+    font-weight: bold;
+    text-shadow: 0 0 2px #FFFFFF ;
+}
+
+
+/*Header ####################################*/
+
+header {
+    margin-top: 10px;
+}
+
+header p {
+   text-align: center;
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-left: 8em;
+    color: #59435f;
+    text-shadow: 0 0 2px white ;
+    vertical-align: middle;
+}
+
+header #line_horizontal {
+//    clear: both;
+    height: 20px;
+    background-color: #db514d;
+    margin-top: 45px;
+}
+
+header #deconnect {
+    float: left;
+    background-color: #db514d ;
+    color: #59435f ;
+    text-shadow: 0 0 2px white ;
+    font-weight: bold;
+    height: 1.5em;
+    width: 9.5em;
+    font-size: 1.5em;
+    margin-left: 1.3em;
+    border-radius: 4px;
+    text-align: center;
+}
+
+header #deconnect:hover{
+    font-size: 1.5em;
+    color: #EfEfEf;
+}
+/*END Header ####################################*/
+
+
+/*Connexion ###########################*/
+
+#connexion {
+    margin-left: 15em;
+}
+
+
+#connexion label , #connexion input {
+    display: block;
+    margin: 20px 100px;
+    text-align: left;
+    font-size: 1.5em
+}
+
+#connexion label {
+    color: #59435f;
+    text-shadow: 0 0 2px white ;
+}
+
+#connexion input {
+    border-radius: 4px;
+    padding: 5px;
+    background-color:   rgba(89,67,95 , 0.4);
+    box-shadow: 0 0 2px white inset;
+    color: white;
+}
+
+
+#connexion input:last-of-type {
+    margin-left: 400px;
+    padding: 5px 10px;
+}
+
+#mes {
+    color: #db514d;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 0 2px white ;
+}
+/* END Connexion ###########################*/
+
+
+
+/*Menu ##############################*/
+nav {
+    width: 11em;
+    float: left;
+    font-size: 1.5em
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    text-decoration: none;
+/*
+font-size: 1.5em;
+
+    border-radius: 4px;
+*/
+    height: 2em;
+    width: 9.5em;
+    background-color: #db514d;
+    margin: 1em 1.3em;
+    padding: 0;
+    text-shadow: 0 0 2px white ;
+    font-weight: bold;
+    height: 1.5em;
+    width: 9.5em;
+    margin-left: 1.3em;
+    border-radius: 4px;
+    text-align: center;
+
+}
+
+nav ul li a {
+    height: 2em;
+    width: 9.5em;
+    text-decoration: none;
+    display: block;
+    color: #59435f ;
+    text-shadow: 0 0 2px white ;
+
+}
+
+
+nav ul li:hover {
+    font-size: 1em;
+    width: 9.8em;
+/*    border-radius: 4px 30px 30px 4px;*/
+    box-shadow: 0 0 2px white inset;
+}
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li:active {
+    font-size: 1.1em;
+    color: white;
+   /* width: 10em;*/
+ // border-radius: 4px 30px 30px 4px;
+    box-shadow: 0 0 2px white inset;
+} 
+/*END Menu ##############################*/
+
+
+
+/* Tableau ##############################*/
+
+#tableau {
+    margin-left: 11em;
+    font-size: 1.5em;
+}
+
+#tableau #btn {
+    float: right;
+    border-radius: 4px;
+    /*padding-right: 5px;*/
+    background-color:   rgba(89,67,95 , 0.4);
+    box-shadow: 0 0 2px white inset;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    margin: 30px 50px ;
+
+}
+
+#tableau #btn:hover {
+    font-size: 1.22em;
+    color: #db514d;
+}
+
+
+#tableau table {
+    clear: right;
+    margin: 20px;
+    border-collpase: separate;
+    font-size: 1.2em;
+    background-color: rgba(89,67,95,0.2)
+}
+
+
+#tableau table caption{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px; 
+}
+
+#tableau h1{
+    margin-top: 10px;
+}
+
+#tableau table td {
+    padding: 3px;
+    text-align: left;
+    padding: 5px;
+}
+
+#tableau table a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 2px #59435f ;
+}
+
+#tableau table a:hover {
+
+    color: rgba(219,81,77, 0.6);
+    font-size: 1em;
+
+}
+
+#tableau tr > *:nth-child(0n+1){
+    display: none;
+}
+
+
+.hdr {
+    font-weight: bold;
+    font: 1.3em;
+}
+/*
+u {
+    text-decoration: underline;
+}
+*/
+
+#activitesCDJ div input , #activitesCDJ div legend ,  #activitesCDJ div  {
+      float: left;
+}
+
+#activitesCDJ div
+{
+    width= 23%;
+}
+
+/* END Tableau ##############################*/
+
+/* Ajoute ##############################*/
+
+#ajoute input{
+   background-color: rgba(89,67,95,0.2);
+    text-align: left;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+
+/* END Ajoute ##############################*/
+
+/* Modif CDJ information ################# */
+ #modifCDJ {
+
+/*     clear: right;*/
+     margin: 0;
+     padding: 0;
+     margin: 10px;
+     margin-left: 17em;
+     overflow: inherit;
+ }
+
+ #modifCDJ form {
+     background-color: rgba(89,67,95,0.2);
+     padding: 10px;
+ }
+
+
+#modifCDJ input , #modifCDJ label ,#modifCDJ select ,#modifCDJ select option, #modifCDJ textarea  {
+    display: block;
+    width: 97%;
+    text-align: left;
+    font-size: 1.2em;
+    margin-left: 10px;
+    padding-left: 10px;
+    background-color: rgba(89,67,95,0.2);
+    box-shadow: 0 0 2px white inset;
+}
+
+#modifCDJ select option{
+    background-image:  url("../images/background.jpg");
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    background-color: rgba(89,67,95,0.2);
+}
+#modifCDJ label , #modifCDJ.select > * {
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 1.2em;
+}
+
+
+#TypeArondDateCDJ > div{
+    display: block;
+    text-align: left;
+    width: 32%;
+    margin-top: 10px;
+    float: left;
+}
+
+#TypeArondDateCDJ #TAD_CDJ3 ,#TypeArondDateCDJ #TAD_CDJ4 {
+    width: 16%;
+    margin-left: 10px;
+}
+#TelCourNomCDJ {
+    clear: both;
+ }
+
+#TelCourNomCDJ > div {
+   float: left;
+    width: 32%;
+  /*margin-left: 10px;*/
+}
+
+
+#AdrCDJ {
+    clear: both;
+    margin-bottom: 30px;
+}
+
+#SiteCDJ{
+    margin-bottom: 30px;
+}
+#btnsCDJ , #btnsCDJ2 {
+    margin-top: 15px;
+}
+#btnsCDJ input[name='coment'] , #btnsCDJ input[name='grp'] {
+    width: 20%;
+    float: left ;
+}
+
+#btnsCDJ2 {
+   /* clear: both;*/
+margin-top: 70px;
+}
+
+#btnsCDJ2 input {
+    /*float: right;*/
+    width: 15%;
+    text-align: center;
+}
+
+/*
+#btnsCDJ2 input[name='annuler'] , #btnsCDJ2 input[name='sauvegarder'] {
+    width: 20%;
+    float: right ;
+}
+*/
+#end {
+    clear: both;
+}
+
+#ajouteCDJ {
+    width: 20%;
+
+}
+
+
+/* EDN Modif CDJ information ################# */
+
+input[type='file'] {
+    float: right;
+    border-radius: 4px;
+    /*padding-right: 5px;*/
+    background-color:   rgba(89,67,95 , 0.4);
+    box-shadow: 0 0 2px white inset;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    margin: 30px 0 ;
+
+}
+
+form input:invalid {
+   color: #db514d;
+}

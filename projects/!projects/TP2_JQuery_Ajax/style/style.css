@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
+
+body , html{
+    text-align: center;
+    background-color: #BFAE99;
+}
+
+h2 {
+    margin-top: 5%;
+    font-size: 2em;
+    font-family: 'Kaushan Script';
+    color: #473b2d;
+}
+
+#contenu{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #1F2E03;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+input {
+    padding: 2px 0 ;
+    background-color: #8C765A;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    width: 22%;
+    color: #BFAE99; ;
+    font-family: 'Kaushan Script';
+    font-weight: bolder 1500;
+    text-shadow: 0 0.5px 0 #F2E4DC;
+    font-size: 1.5em;
+}
+
+input:hover {
+    font-size: 1.6em;
+}
+
+table{
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+table td:last-child:hover , .trTH:hover {
+    background-color: #BFAE99;
+}
+
+
+table tr:hover , .trTH:hover , .trTH{
+    background-color: rgba(171,149,122, 0.5);
+}
+
+.trTH th{
+    font-family: 'Kaushan Script';
+    border-radius: 5px;
+    color: #473b2d;
+    border :none;
+    font-weight: bold;
+}
+table td , table th {
+    width: 14%;
+
+    height: 1.5em;
+    padding: 3px;
+    border: 1px solid rgba(162,137,106 , 0.6);
+    text-align: left;
+}
+
+
+.lastTD{
+    border: none;
+    background-color: #BFAE99;
+}
+
+table td:first-child{
+    width: 30%;
+}
+
+
+#icon_livre {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    width: 250px;
+    height: 150px;
+}
+/*
+
+table#entrees, table#entrees th, table#entrees td {
+    border: 1px solid black;
+}
+*/

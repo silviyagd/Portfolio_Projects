@@ -1,0 +1,121 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body {
+	background-color : #336699;
+	font-family: arial;
+	font-size: 13px;
+}
+
+#global {
+	background-color: white;
+	margin : 30px auto;
+	width: 700px;
+    padding: 0px;
+
+	-moz-box-shadow:    1px 1px 5px 1px #003399;
+    -webkit-box-shadow: 1px 1px 5px 1px #003399;
+    box-shadow:     	1px 1px 5px 1px #003399;
+}
+
+#global_etap3 {
+	background-color: white;
+	margin : 30px auto;
+	width: 700px;
+        padding: 0px;
+
+	-moz-box-shadow:    1px 1px 5px 1px #003399;
+    -webkit-box-shadow: 1px 1px 5px 1px #003399;
+    box-shadow:     	1px 1px 5px 1px #003399;
+}
+#formulaire{
+	padding:25px;
+}
+
+fieldset {
+	border : 0px ;
+	padding-bottom: 15px;
+	padding-top: 0px;
+	padding-left: 7px;
+}
+fieldset #etape1, #etape2, #achatbillets{
+	padding-left: 0px;
+}
+fieldset #etape2{
+	padding-bottom: 0px;
+}
+#barreBlue{
+	margin:0px;
+	height:40px;
+	background-color: #6699cc;
+}
+legend{
+	font-weight: bold;
+}
+label{
+	display:block;
+	font-size: 70%;
+	padding-bottom: 7px;
+	padding-top: 3px;
+}
+.hh1{
+	font-size: 150%;
+	font-weight: lighter;
+	padding-bottom: 15px;
+}
+.hh2{
+	font-size: 110%;
+	padding-bottom: 15px;
+}
+.hrr{
+	padding-bottom: 15px;
+}
+#prov{
+	width: 80%;
+}
+#btn{
+	width: 190px;
+	height: 40px;
+	font-size: 1.2em;
+}
+
+#btn2{
+	width: 80px;
+	height: 40px;
+	font-size: 1.2em;
+}
+.left {
+ 	float : left; 
+}
+.right {
+ 	margin-left: 50%; 
+}
+.espace{
+	margin-left: 7%;
+}
+.paddCheck{
+	padding: 6px;
+}
+/* make a input type radio look like a checkbox http://stackoverflow.com/questions/279421/can-you-style-an-html-radio-button-to-look-like-a-checkbox */
+input[type="radio"] {
+    -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+    -moz-appearance: checkbox;    /* Firefox */
+    -ms-appearance: checkbox;     /* not currently supported */
+}
+.vert{
+	color:#009999;
+}
+.alert{
+	color:red;
+	font-size: 11px;
+	display:block;
+}
+#footer {
+	text-align: center;
+	font-size: 11px;
+	padding-bottom: 10px;
+	font-family: "Arial";
+}
+
+

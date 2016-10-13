@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+    * {
+        font-family: "Open Sans";
+    }
+
+	body {
+	    background-image: url("../images/2.jpg");
+	    background-color: #005082;
+	    background-size: cover;
+	    background-position: top center;
+	    background-repeat: no-repeat ;
+	    background-attachment: fixed;
+	}
+	    
+	
+	div#container , table{
+	    width: 70%;
+	    margin: 0 auto;
+	}
+	   
+   fieldset{
+       background-color: rgba(255,255,255,0.8);
+       box-shadow: 0px 1px 4px #000000 , 0px 1px 6px #b91b18 , 0px 1px 10px #000000;
+       border: none;
+       line-height: 150%;
+   }
+
+
+    h1 {
+    	text-shadow: 1px 1px 2px #000000;
+	    margin-top : 20px;
+    }
+
+   p, h2  {
+       font-size: 2em;
+       text-align: center;
+       color: #FFFFFF;
+       text-shadow: 2px 2px 4px #000000;
+    }
+   
+
+   h2 , table tr:last-child {
+        text-align: left;
+        color : #000000
+    }
+
+
+    input[type='submit']{
+        width: auto;
+        float: right;
+        margin: 10px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 1.5em;
+        border: none;
+        background-color: #D4D4D4;
+        box-shadow: 0 0 2px #FFFFFF inset , 0 0 2px #FFFFFF , 1px 1px 2px #000000;
+    }
+    
+    input[type='submit']:hover {
+        text-shadow: 1px 0 2px rgba(185,27,24,0.7);
+        font-size: 1.51em;
+    }
+
+    input[type='submit']:active{
+        box-shadow: 0 0 3px #FFFFFF inset , 0 0 3px #FFFFFF ;
+    }
+
+
+    input[type="radio"]{
+         margin-left: 70px;
+    }
+    
+    input[type="radio"]:hover{ 
+        cursor: pointer;
+    }
+
+
+    u {
+	margin-right : 20px;
+	font-weight : bold;
+    }
+
+/* Table #######################################*/
+table td , table th {
+       background-color: rgba(255,255,255,0.8);
+       border: none;
+       line-height: 150%;
+
+    border: solid 1px rgba(0,0,0, 0.2);
+
+}
+
+table, td, th{
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 1em;
+
+}
+
+table{
+    margin-bottom: 5em;
+}
+
+
+table tr:last-child td {
+    font-size : 1.8em;
+    text-align:right;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*################################*/
+.qstSpan{
+    margin: 20px 0 0 20px ;
+    line-height: 2em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.answSpan{
+    margin: 20px 0 0 20px ;
+    line-height: 1.8em;
+    font-size: 1.1em;
+}
+
+.bxSh {
+         -o-box-shadow:     0px 1px 4px #000000 , 0px 1px 6px #b91b18 , 0px 1px 10px #000000;
+       -moz-box-shadow:     0px 1px 4px #000000 , 0px 1px 6px #b91b18 , 0px 1px 10px #000000;
+    -webkit-box-shadow:     0px 1px 4px #000000 , 0px 1px 6px #b91b18 , 0px 1px 10px #000000;
+            box-shadow:     0px 1px 4px #000000 , 0px 1px 6px #b91b18 , 0px 1px 10px #000000;
+
+    border: solid 0 #fff;
+    
+}
+
+ .correct {
+ 	color : #009900;
+ }
+
+
+.incorrect {
+ 	color : #990000;
+ 	font-weight :bold;
+ 	padding-right : 70px;
+ }
+ 
+
+/*###############################################*/
+
+@media screen and (max-width:768px) {
+
+
+     p, h2, h1, input[type='submit'] , table td * ,table th * , table tr:last-child td {
+        font-size: 1.2em;
+    }
+
+    input[type='submit'] {
+        font-size: 1em;
+    }
+    input[type='submit']:hover {
+        font-size: 1.01em;
+    }
+
+    .qstSpan{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:360px) {
+
+
+    p, h2, h1, input[type='submit'] , table td * ,table th * , table tr:last-child td {
+        font-size: 1em;
+    }
+
+    input[type='submit'] {
+        font-size: 0.8em;
+    }
+    input[type='submit']:hover {
+        font-size: 0.81em;
+    }
+
+    .qstSpan{
+        font-size: 0.7em;
+    }
+
+
+}
+
+ 

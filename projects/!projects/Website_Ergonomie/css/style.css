@@ -1,0 +1,665 @@
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+
+* { padding:0; margin: 0px; }
+
+*, *:before, *:after { 
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; 
+}
+
+body {
+    background: url("../images/grass3.jpg")no-repeat fixed;
+    background-size: cover;
+    font-size: 1.2em;
+    font-family: "Architects Daughter";  
+    font-weight: 1000;
+}
+
+#global {
+    margin: 0 auto;
+    width: 1200px;
+    margin-top: 20px;
+
+}
+
+a {
+    color: #484848 ;
+}
+
+em {
+    font-weight: bold
+}
+/*Drop shadow #######################*/
+
+header , #contenu , footer , #contenuCont{
+    box-shadow: 2px 0 5px rgba( 0, 0, 0, 0.5);
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/*  logo    ###############################*/
+header {
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(176,223,179,0.7));
+    border-radius: 100px 100px 0 0;
+    padding: 10px 20px;
+    box-shadow: 2px 0 5px rgba( 0, 0, 0, 0.5), 0 5px 3px rgba( 255, 255, 255, 0.5) inset;
+    border-left: 1px solid rgba( 0, 0, 0, 0.2);
+    border-right: 1px solid rgba( 255, 255, 255, 0.2);
+    height: 180px;
+    
+} 
+
+/*Les elements dans header , sauf le logo , block1 et block2 ##################*/
+ #block1 , #block2{
+    height: 180px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+
+#search {
+    vertical-align: bottom;
+    margin-bottom: 0    
+}
+
+
+#search img {
+    margin-right: 50px
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-20deg);
+}
+
+/*Positionement du elements dans la header ####################*/
+#livrasion , #search {
+    display: block;
+}
+
+
+#logo ,#headerImgs , #block1 , #block2 , #search h3, #search img , #search input , #search  {
+    display: inline-block;
+    
+}
+
+/* Specifie du largeur du elements dans la header #################*/
+#logo   {
+    width: 25%;
+}
+
+#headerImgs  {
+    width: 73%;
+}
+
+/*Block1 et Block2 sont les 2 elements dans #headerImgs*/
+#block2 {
+    width: 15%;
+}
+
+#block1 {
+    width: 83%;
+}
+
+#block1 img {display: inline; float: left; margin-left: 30px;}
+#headerImgs , #block2 , #block1 ,#search{
+    text-align: right
+}
+
+#search {
+    position: relative;
+    left: 340px;
+    top: 0px;
+}
+
+#block1 ,#panier {
+    text-align: left;
+    margin-left: 5px;
+
+}
+
+#block1 {
+    position: relative;
+    top: -20px;
+    left: 00px;
+}
+
+
+/*Grandir du h1 et h3*/
+#block1 h1 {
+    margin-left: 30px;
+    
+    color: #294a03;
+}
+
+#block1 h3 {
+    margin-left: 30px;
+    margin-top: 0;
+    color: #294a03;
+}
+
+
+/*Input Search grandir width et height*/
+#block1 #search input:last-child {
+    width: 250px;
+    line-height: 1.8em;
+    background-color: #d0eacb;
+}
+
+#panier, #search input  {
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: top;
+    
+}
+
+#contenuCont input,textarea,select {
+    background-color: #eef5ec;
+}
+
+#panier {
+    position: relative;
+    right: -15px;
+    top: -10px;
+
+}
+
+/* EDN logo*/
+
+
+/*  Menu    ###############################*/
+nav {
+    height: 90px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+nav ul , nav li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    text-align: center;
+    height: 90px;
+    margin: 0 auto;
+    box-shadow: 2px 0 5px rgba( 0, 0, 0, 0.5), 0 1px 3px rgba( 255, 255, 255, 0.5) inset;
+    border-left: 1px solid rgba( 0, 0, 0, 0.2);
+    border-right: 1px solid rgba( 255, 255, 255, 0.2);
+    border-radius: 2px;
+    
+}
+
+nav li:hover {      
+    box-shadow:  0 0 200px rgba(176,223,179,1) inset;
+}
+
+nav img {
+    width: 175px;
+    opacity: 0.8;
+}
+
+
+nav a {
+	display:block;
+	border-bottom:1px;
+	text-decoration:none;
+	height: 90px;
+    width: 200px;
+}
+
+/*Les coleurs des boutons ##################*/
+.bvert {
+    background: #aad879;
+    background: linear-gradient( #d4f692, #b9f057);
+ 
+}
+
+.brose {
+    background: #ebdae7;
+    background: linear-gradient( #eec5e7, #e29cd5);
+}
+
+.bjaune {
+    background: #eff1c0;
+    background: linear-gradient( #eff1c0, #dee0a8);
+
+}
+
+.borange {
+    background: #efb571;
+    background: linear-gradient( #f4c389, #d7a05f);
+
+}
+
+.bbleu {
+    background: #6ab4c4;
+    background: linear-gradient( #6ab4c4, #5ba1b0);
+
+}
+
+
+#contenu {
+    clear: both;
+    display: inherit;
+    /*min-height: 400px;*/
+    min-height: 540px;
+    background-color: rgba(255,255,255,0.7); 
+    padding-left: 20px;
+    padding-right: 0px;
+    
+}
+
+#contenu section {
+    background-color: rgba(255,255,255,0.7); 
+    width: 930px;
+    float: left;
+    margin-top: 23px;
+}
+
+#contenu aside {
+    font-weight: bold;
+    color:#0a3e4e;
+    float: right;
+    margin: auto;
+    text-align: right;
+    
+}
+
+#contenu aside div {
+    padding: 10px;
+    text-align: center;
+    background-color: #f1b98a;
+    height: 140px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/*Aside Chiens ###############################*/
+/*Les menu pour l'achats */
+#contenu aside[id="chien"] {
+    float: left;
+    width: 200px;
+    margin: auto;
+    text-align: left;
+    border: 1px;
+    background-color: rgba(241,185,138, 0.7);
+    margin: 20px;
+}
+
+#contenu aside[id="chien"] div {
+    width: inherit;
+    margin: 10px 0;
+    background: none;
+}
+
+
+
+#contenu aside[id="chien"] ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contenu aside[id="chien"] ul li {
+    padding: 10px 20px;
+    line-height: 1.2em;
+    
+}
+
+#contenu aside[id="chien"] a {
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 1em 0;
+}
+#contenu aside[id="chien"] a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+#contenu aside[id="chien"] div {
+    height: auto;
+}
+
+/*Les 6 boxes avec des images dans la section*/
+.box {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    margin: 10px 25px;
+    background-color: rgba(241,185,138, 0.4);
+}
+
+.box img {
+    width: 150px;
+    height: 150px;
+}
+.box em , .box a{
+    font-weight: bold;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+
+.box , #contenu aside[id="chien"] {
+    box-shadow: 2px 0 5px rgba( 0, 0, 0, 0.5), 0 1px 3px rgba( 255, 255, 255, 0.5) inset;
+    
+}
+
+/* Section Chien*/
+ #contenu section[id="sectChn"] {
+  text-align: center;
+  background: none;
+}
+
+
+
+/*END Aside Chiens ###############################*/
+
+
+/* END  Contenu    ###############################*/
+
+
+footer {
+    clear: both;
+    background-color: rgba(176,223,179,0.7);
+    background: linear-gradient(rgba(176,223,179,0.7),rgba(255,255,255,0.7));
+    height: 200Px;
+    margin-bottom: 0px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 0 0 10px 10px ;
+}
+
+
+#navliste dl {
+    font-family: sans-serif;
+    color: #0a3e4e;
+    font-size: 0.8em;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+
+#navliste dt {
+    text-align: left;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+#navliste dl {
+    text-align: left;
+}
+
+#FB, #TW, #Gplus {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    display: inline-block;
+    opacity: 0.5;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#FB:hover, #TW:hover, #Gplus:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+#retour {
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 200px;
+    position: fixed;
+    bottom: 0px;
+    right: 1280px;
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(176,223,179,0.7));
+    box-shadow: 2px 0 5px rgba( 0, 0, 0, 0.5), 0 1px 3px rgba( 255, 255, 255, 0.5) inset;
+    border-left: 1px solid rgba( 0, 0, 0, 0.2);
+    border-right: 1px solid rgba( 255, 255, 255, 0.2);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#retour:hover {
+    cursor: pointer;
+    background: rgba(206,223,209,1);
+    box-shadow:  0 1px 3px rgba( 255, 255, 255, 0.5) inset;
+}
+
+em {
+    padding-right: 20px;
+    font-size: 0.8em;
+    text-align: center;
+    color: darkgreen;
+}
+
+
+.right {text-align: right;}
+
+.titre {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#index {
+    color: #0a3e4e;
+    padding: 10px;
+}
+
+#index p {font-family: sans-serif; font-size: 0.9em;}
+#index img {display: inline-block; vertical-align: top; float: right}
+
+/*section {clear:both;}*/
+
+
+/*Section Contacts #################################### */
+
+
+
+#contenuCont {
+    clear: both;
+    display: inline-block;
+    vertical-align: top;
+    /*min-height: 400px;*/
+    min-height: 540px;
+    background-color: rgba(255,255,255,0.75); 
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+    
+}
+
+#contenuCont section {
+    min-height: 540px;
+    width: 90%;
+    vertical-align: top;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+footer {
+    clear: both;
+    background-color: rgba(176,223,179,0.7);
+    background: linear-gradient(rgba(176,223,179,0.7),rgba(255,255,255,0.7));
+    height: 200Px;
+    margin-bottom: 0px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 0 0 10px 10px ;
+}
+
+#reseaux {
+    width: 230px;
+    height: 70px;
+    position: relative;
+    left: 67.5%;
+    top: -170%;
+}
+
+#navliste dl {
+    font-family: sans-serif;
+    color: #0a3e4e;
+    font-size: 0.8em;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+
+#navliste dt {
+    text-align: left;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+#navliste dl {
+    text-align: left;
+}
+
+
+
+#FB {
+    background: url(../images/mediasociaux.png) 0 0;
+
+}
+
+#TW {
+    background: url(../images/mediasociaux.png) 40px 0;
+
+}
+
+#Gplus {
+    background: url(../images/mediasociaux.png) 80px 0;
+}
+
+#retour {
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 200px;
+    position: fixed;
+    bottom: 0px;
+    left: 120px;
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(176,223,179,0.7));
+    box-shadow: 2px 0 5px rgba( 0, 0, 0, 0.5), 0 1px 3px rgba( 255, 255, 255, 0.5) inset;
+    border-left: 1px solid rgba( 0, 0, 0, 0.2);
+    border-right: 1px solid rgba( 255, 255, 255, 0.2);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#retour:hover {
+    cursor: pointer;
+    background: rgba(206,223,209,1);
+    box-shadow:  0 1px 3px rgba( 255, 255, 255, 0.5) inset;
+}
+
+#contenuCont em {
+    padding-right: 20px;
+    font-size: 1em;
+    text-align: center;
+    color: darkgreen;
+}
+
+.right {text-align: right;}
+
+.titre {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#index {
+    color: #0a3e4e;
+    padding: 10px;
+}
+
+#index p {font-family: sans-serif; font-size: 0.9em;}
+#index img {display: inline-block; vertical-align: top; float: right}
+
+#contenuCont section {clear:both;}
+
+/* --------------------- SECTION CONTACT -------------------------- */
+
+#gmap_canvas img {
+    display: inline;
+    float: right;
+    max-width:none!important;
+    background:none!important
+        vertical-align: top;
+}
+
+#carte {
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+#gmap {
+    display: inline;
+    float: right;
+    vertical-align: top;
+}
+
+#contenuCont #carte h1,#contenuCont h3,#contenuCont p {
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    text-align: left;
+}
+
+#contenuCont input,#contenuCont select,#contenuCont textarea {
+
+    float: right;
+    vertical-align: top;
+    margin-right: 500px;
+    padding: 5px;
+    margin-bottom: 5px;
+    
+
+}
+
+#contenuCont label {
+    padding-left: 100px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#contenuCont form {
+    height: 500px;
+}
+
+
+/*Div contenu image CHien ############################*/
+
+.chien {
+    width: 150px;
+    height: 150px;
+    margin-left: 200px;
+}

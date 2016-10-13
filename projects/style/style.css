@@ -1,0 +1,390 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 21, 2015, 9:58:38 PM
+    Author     : Silviya
+*/
+@import url(https://fonts.googleapis.com/css?family=Julee);
+/*@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);*/
+@import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+/*@import url(https://fonts.googleapis.com/css?family=Playball);
+@import url(https://fonts.googleapis.com/css?family=Tangerine);*/
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+
+body, html{
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    overflow:hidden !important;
+/*background-color: #ff5500;*/
+}
+#content{
+    height: 100%;
+    width: 100%;
+}
+
+
+#content-white ,#content-body ,#menu0 , #menu1 , #menu2 , #menu3 {
+    float: left;
+    height: 100%;
+}
+
+#content-body{
+    overflow: hidden;
+}
+
+#content-white {
+    width: 13%;
+    background-color: #FFFFFF;
+}
+
+#content-body{
+    width: 87%;
+}
+#menu1 , #menu2 , #menu3{
+    width: 3%;
+}
+
+#menu0{
+    width: 91%;
+    background-color: #2f496e;
+    background:    -webkit-linear-gradient(#2f496e, #406499); /* For Safari 5.1 to 6.0 */
+    background:         -o-linear-gradient(#2f496e, #406499); /* For Opera 11.1 to 12.0 */
+    background:       -moz-linear-gradient(#2f496e, #406499); /* For Firefox 3.6 to 15 */
+    background:            linear-gradient(#2f496e, #406499); /* Standard syntax */
+}
+
+#menu1{
+    background-color: #2988bc ;
+    background:    -webkit-linear-gradient(#2988bc , #57acda); /* For Safari 5.1 to 6.0 */
+    background:         -o-linear-gradient(#2988bc , #57acda); /* For Opera 11.1 to 12.0 */
+    background:       -moz-linear-gradient(#2988bc , #57acda); /* For Firefox 3.6 to 15 */
+    background:            linear-gradient(#2988bc , #57acda); /* Standard syntax */
+}
+
+#menu2{
+    background-color: #ed8c72 ;
+    background:    -webkit-linear-gradient(#ed8c72 , #f6c3b6); /* For Safari 5.1 to 6.0 */
+    background:         -o-linear-gradient(#ed8c72 , #f6c3b6); /* For Opera 11.1 to 12.0 */
+    background:       -moz-linear-gradient(#ed8c72 , #f6c3b6); /* For Firefox 3.6 to 15 */
+    background:            linear-gradient(#ed8c72 , #f6c3b6); /* Standard syntax */
+}
+
+
+#menu3{
+    background-color: #e8d2b8 ;
+    background:    -webkit-linear-gradient(#e8d2b8 , #FFFFFF); /* For Safari 5.1 to 6.0 */
+    background:         -o-linear-gradient(#e8d2b8 , #FFFFFF); /* For Opera 11.1 to 12.0 */
+    background:       -moz-linear-gradient(#e8d2b8 , #FFFFFF); /* For Firefox 3.6 to 15 */
+    background:            linear-gradient(#e8d2b8 , #FFFFFF); /* Standard syntax */
+}
+
+/*content-principal ##########################*/
+#menu0 div h2 , #menu0 div img{
+    display: inline;
+    vertical-align: middle;
+}
+
+
+p{
+    font-family: 'Julee';
+    text-align: justify;
+    margin: 7% 18%;
+    color: #bdccd4;
+}
+
+a{
+    text-decoration: none;
+    color: #bdccd4;
+    text-shadow:0 0 1px #bdccd4;;
+}
+/* Home #####################################*/
+
+h1 {
+    color: #bdccd4;
+    font-size: 1.5em;
+    margin: 3% 0 0 25%;
+    text-align: left;
+    font-family: 'Nothing You Could Do' ;
+}
+
+h2{
+    color: #29abe2;
+    font-size: 1.3em;
+
+}
+
+/* Images ######################################*/
+
+#logo_img {
+    position: fixed;
+    width: 10%;
+    height: 15%;
+    top: 10%;
+    left: 1%;
+}
+
+#silviya_img{
+    position: fixed;
+    width: 24%;
+    height: 40%;
+    top: 60%;
+    left: 1%;
+}
+
+#icon_css{
+    position: fixed;
+    width: 27%;
+    height: 50%;
+    top: 50%;
+    left:60%;
+    opacity: 0.05;
+
+}
+
+/*###############################################*/
+
+#icon_home{
+    float: right;
+    bottom: 0;
+    margin: 5px 5px 0 0 ;
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+#icon_cv ,#icon_portfolio ,#icon_contacts {
+    float: right;
+    bottom: 0;
+    margin: 5px 5px 0 0 ;
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+/*######################################*/
+
+#content-menu1, #content-menu2 , #content-menu3 {
+    display: none;
+}
+
+#menu0, #menu1, #menu2 , #menu3 {
+}
+
+#content-menu0, #content-menu1, #content-menu2 , #content-menu3 {
+    overflow:hidden !important;
+    height: 95%;
+    padding-bottom: 5%;
+}
+#content-menu0Ch, #content-menu1Ch, #content-menu2Ch , #content-menu3Ch {
+    overflow: hidden;
+    overflow-y: auto !important;
+    height: 90% !important;
+    width: 105%;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* About Me  #######################################*/
+
+#content-menu0{
+    height: 100%;
+    overflow: auto;
+}
+
+
+#content-menu0 p{
+    font-size: 1.2em;
+}
+
+/*CV ############################################*/
+
+#menu1 div{
+    margin: 0 auto;
+
+}
+
+#menu1 p{
+    font-size: 1em;
+}
+#CVheader *{
+    display: inline;
+    vertical-align: middle;
+}
+
+#CVheader h2{
+    width: 60%;
+}
+
+div[class="progress marginBottom"]{
+    margin: 30px;
+}
+
+    /* Portfolio ####################################*/
+
+#menu2 *{
+    color: #2f496e;
+}
+
+#content-menu2{
+    width: 80%;
+    margin: 0 auto;
+   /* padding: 5% 0;*/
+    text-align: center;
+}
+
+
+#content-menu2 img
+{
+    margin-bottom: 30px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color:#333;
+
+}
+
+
+#content-menu2 h1{
+    color: #e8d2b8;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+
+/* Contacts #######################################*/
+
+
+form{
+    width: 40%;
+    margin: 2em 0 0 17em;
+}
+#content-menu3 h1{
+    margin-top: 5%;
+}
+#content-menu3 *{
+    color: #2f496e ;
+    font-family:'Nothing You Could Do' ;
+}
+
+#content-menu3 div{
+    display: block;
+    margin-top: 10px;
+}
+
+#content-menu3 div input , #content-menu3 div label , #content-menu3 div textarea {
+    display: block;
+    text-align: left;
+    background: transparent;
+
+}
+
+#content-menu3 div input ,#content-menu3 div textarea {
+    font-family: "Julee";
+}
+
+/* Defnition Classes #####################################*/
+
+/*#menu0 a ,#menu1 a , #menu2 a ,#menu3 a {*/
+.aFloat {
+    /*   display: block;*/
+    float: right;
+    height: 100%;
+    width: 2.2 em;
+}
+
+.marginLeft{
+    padding-left: 15%;
+}
+
+.marginBottom {
+    margin-bottom: 10px;
+}
+
+.bonjour{
+    font-size: 3em;
+    font-family: "Sacramento";
+    font-weight: lighter;
+    text-align: center;
+    display: block;
+    margin: 10px;
+}
+
+.monNom{
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+.wordsP{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.sourire{
+    font-size: 2em;
+    opacity: 0.4;
+    color: yellowgreen;
+
+    /* TODO
+    -ms-transform: rotate(125deg); /* IE 9 */
+  /*  -webkit-transform: rotate(125deg); /* Chrome, Safari, Opera */
+  /*  transform: rotate(125deg);*/
+}
+
+.textRight{
+    text-align: right;
+}
+
+.contentVisible {
+    display: block;
+    background-color: #055050;
+}
+
+.contentInvisible{
+    /*    display: none;*/
+    transition:opacity 3s linear;
+}
+
+hr{
+    border: 0; 
+    height: 1px; 
+    background-image: linear-gradient(to right, rgba(47,73,110,0), rgba(47,73,110,0.75), rgba(47,73,110,0));
+    width: 30%;
+}
+
+/*Images Animations*******************/
+@keyframes imgAnim {
+	0% {
+     -webkit-filter: : grayscale(0.8) blur(2px) opacity(0.8);
+		filter: grayscale(0.8) blur(2px) opacity(0.8);
+	 
+        
+	}
+	100% {
+     -webkit-filter: : grayscale(0.1) blur(1px) opacity(1);
+		filter: grayscale(0.1) blur(1px) opacity(1);
+	 
+       
+	}
+}
+
+.img-circle{
+     -webkit-filter: : grayscale(0.8) blur(2px) opacity(0.8);
+		filter: grayscale(0.8) blur(2px) opacity(0.8);
+	 
+}
+
+.img-circle:hover{
+     animation-name: imgAnim;
+	 animation-duration: 1s;
+	 animation-iteration-count: 1;
+	 animation-direction: alternate;
+	 animation-timing-function: ease-out;
+	 animation-fill-mode: forwards;
+    
+}

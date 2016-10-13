@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <a name="haut"></a>
+    <head>
+        <title>Maquette de site Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        
+        <div id="global">
+            
+             <header>
+                <div id="logo">
+                    <a href="index.html"><img src="images/logo_shadow.png" alt="logo"/></a>
+                </div> 
+                
+                <div id="headerImgs">
+                    <div id="block1">
+                        <div id="livrasion">
+                            <h1>Livrasion gratuite</h1>
+                            <img src="images/livrasion3.png" alt="livrasion"  height="40" width="40"/>
+                            <h3>à partir de 50$</h3>
+                            
+                            
+                        </div>
+
+                        <div id="search">
+
+                            <input type="image" name="btnSearch" width="30px" src="images/Search.png" alt="Submit Form" >
+                            <input type="text" name="search" placeholder="Rechercher"> 
+                        </div>
+                    </div>
+                    
+                    <div id="block2">
+                        <div id="panier">
+                            <a href="#"><img src="images/pannier2.png" alt="Pannier"  width="50"><p>(0) articles</p></a>
+                        </div>
+
+
+                    </div>
+                </div>
+                 
+        <div id="reseaux">            
+            <img id="FB">
+            <img id="TW">
+            <img id="Gplus">
+        </div>
+                 
+           </header>
+            
+           
+            <nav>
+                <ul>
+                    <li class="bvert"><a href="chiens.html"><img src="images/menu_chien02.png"></a></li>
+                    <li class="brose"><a href="#"><img src="images/menu_chat02.png"></a></li>
+                    <li class="bjaune"><a href="#"><img src="images/menu_oiseau02.png"></a></li>
+                    <li class="borange"><a href="#"><img src="images/menu_autre02.png"></a></li>
+                    <li class="bbleu"><a href="#"><img src="images/menu_sevices02.png"></a></li>
+                    <li class="bbleu"><a href="#"><img src="images/menu_contact02.png"></a></li>
+                </ul>    
+            
+            </nav>
+
+            
+           <div id="contenuCont">
+               
+                
+               
+                <section id="carte">
+                    <table>
+                      <tr>
+                        <th colspan="2"><h1>Comment se rendre chez ZooVie</h1>
+                    <h3>Là où trouver vos toutous</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum magna rutrum porttitor gravida. Ut ut vehicula quam, non ultricies risus. Vestibulum tellus ipsum, ullamcorper et semper sit amet, gravida ac est. </p>
+                    
+                    <p></p></th>
+                        <th rowspan="3">            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'>
+            </script>
+                    
+            <div id="gmap" style='overflow:hidden;height:350px;width:350px;'>
+                <div id='gmap_canvas' style='height:350px;width:350px;'>
+                </div>
+            </div>
+                    
+             <a href='http://www.123-counter.net/'>weitere Infos</a>
+                    <script type='text/javascript' src='http://embedmaps.com/google-maps-authorization/script.js?id=d4d40be5067ce301f2b285436a654e4665f16e88'></script>
+                    <script type='text/javascript'> function init_map(){
+                    var myOptions = {
+                    zoom:13,center:new google.maps.LatLng(45.5487629,-73.55544090000001),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP};
+                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                    marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.5487629,-73.55544090000001)});
+                    infowindow = new google.maps.InfoWindow({
+                    content:'<strong>ZooVie</strong><br>'+
+                    '3645 Sherbrook<br>'+
+                    ' Montreal<br>'
+                    });
+                    google.maps.event.addListener(marker, 'click', function(){
+                    infowindow.open(map,marker);
+                    });
+                    infowindow.open(map,marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                    </script></th>
+                      </tr>
+                        <tr>
+                        <td colspan="2"><h3>Contacter ZooVie</h3></td>
+                        
+                        </tr>
+                      <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Téléphone:</td>
+                        <td>514-982-5698&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                      </tr>                      
+                      <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Courriel</td>
+                        <td>infos@zoovie.com</td>
+                      </tr>
+                    </table><br><br>
+                    
+                    <h3>Demande de soumission en ligne</h3><br><br>
+                    <form id="soumission">
+                        <label>Votre Nom:</label>
+                        <input type="text" placeholder=" Nom" size="30">
+                        <input type="text" placeholder=" Prénom" size="30">
+                        <br>
+                        <label><br><br>Votre courriel:</label>
+                        <input type="email" placeholder=" votrecourriel@type.com" size="30"><br>
+                        <label><br>Votre Téléphone:</label>
+                        <input type="tel" placeholder=" (###) ###-####" size="30"><br>
+                        <label><br><br>Choisir le service:</label>
+                        <select name="service" >
+                            <option value="--- choisir service ---">------- choisir service -------</option>
+                            <option value="ToutHotel">ToutHotel</option>
+                            <option value="Garderie">Garderie</option>
+                            <option value="Garderie">Toilettage</option>
+                        </select><br>
+                        <label><br><br>Commantaires:</label>
+                        <textarea rows="10" cols="32"></textarea>
+                        <input type="reset" value="Effacer"><input type="submit" value="Envoyer">
+                    </form>
+
+               </section>
+
+            
+            </div> 
+            
+            <footer>
+                
+                <nav id="navliste"> 
+                    <dl class="">
+                        <dt>Chiens</dt>
+                        <dd>Nourriture</dd>
+                        <dd>Hygiène</dd>
+                        <dd>Accessoires</dd>
+                        <dd>Vêtements</dd>
+                        <dd>Toilettage</dd>
+                        <dd>Liquidation</dd>
+                    </dl> 
+                    <dl>
+                        <dt>Chats</dt>
+                        <dd>Nourriture</dd>
+                        <dd>Hygiène</dd>
+                        <dd>Toilettage</dd>
+                        <dd>Liquidation</dd>
+                    </dl> 
+                    <dl>
+                        <dt>Oiseaux</dt>
+                        <dd>Nourriture</dd>
+                        <dd>Cages</dd>
+                        <dd>Accessoires</dd>
+                        <dd>Liquidation</dd>
+                    </dl> 
+                    <dl>
+                        <dt>Autres</dt>
+                        <dd>Rongeurs</dd>
+                        <dd>Poissons</dd>
+                        <dd>Reptiles</dd>
+                    </dl>
+                    <dl>
+                        <dt>Services</dt>
+                        <dd>Toilettage</dd>
+                        <dd>Garderie</dd>
+                        <dd>PetHotel</dd>
+                    </dl>                   
+                    <dl>
+                        <dt>Contact</dt>
+                        <dd>Trouver un magasin</dd>
+                        <dd>Envoyez un courriel</dd>
+                        <dd>Contactez par téléphone</dd>
+                        <dd>Aimez notre page Facebook</dd>
+                        <dd>Suivez-nous sur Twitter</dd>
+                    </dl> 
+                </nav>
+                <a href="#haut"><div id="retour">^ Retour en haut ^</div></a>
+
+                
+                
+            </footer>
+            <div class="right"><em>Site web créé par Yan Mongrain et Silviya Draganova © 2015</em></div>
+        </div>
+
+    </body>
+</html>
